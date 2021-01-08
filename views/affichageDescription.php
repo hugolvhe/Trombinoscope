@@ -24,12 +24,13 @@
     <body>
         <div class="containeur">
             <?php
-                $users_view = $users_controller; 
+                $usersView = $usersController;
+                unset($userscontroller); 
             ?>
-            <div class="person <?= strtolower($users_view["prenom"])?>"> 
-                <h3 id=""> <?= $users_view["prenom"]." ". $users_view["nom"] ?></h3>
-                <img src=<?= $users_view["img"] ?>/> 
-                <p> <?= $users_view["desc"] ?></p> 
+            <div class="person <?= htmlspecialchars(strtolower($usersView["surname"]))?>"> 
+                <h3 id=""> <?= htmlspecialchars($usersView["surname"])." ".htmlspecialchars($usersView["name"])?></h3>
+                <img src="<?= htmlspecialchars($usersView["image"])?>"/> 
+                <p> <?=htmlspecialchars($usersView["descr"])?></p> 
             </div>                    
         </div>
     </body>

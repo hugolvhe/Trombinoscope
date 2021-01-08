@@ -22,8 +22,8 @@
         </div>
     </header>
     <body>
-        <div class="containeur">          
-                <h3> <?=htmlspecialchars($argUrl)?>  n'existe pas </h3>
+        <div class="containeur">
+                <h3><?= isset($inputUser) ? htmlspecialchars($inputUser) : htmlspecialchars($idUser)?> n'existe pas </h3>
         </div>
     </body>
 </html>

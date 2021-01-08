@@ -25,13 +25,14 @@
         <div class="containeur">
 
                 <?php
-                    $users_view = $users_controller; 
-                    foreach($users_view as $user ) {
+                    $usersView = $usersController;
+                    unset($usersController); 
+                    foreach($usersView as $user ) {
                 ?>
-                    <div class="person <?= strtolower($user["prenom"])?>"> 
-                        <h3 id="<?= $user["id"]?>"> <?= $user["prenom"]." ". $user["nom"] ?></h3>
-                        <img src=<?= $user["img"] ?>/> 
-                        <p class='none'> <?= $user["desc"] ?></p> 
+                    <div class="person <?= htmlspecialchars(strtolower($user["surname"]))?>"> 
+                        <h3 id="<?=htmlspecialchars($user["id"])?>"><?=htmlspecialchars($user["surname"])." ".htmlspecialchars($user["name"])?></h3>
+                        <img src="<?=htmlspecialchars($user["image"])?>"/> 
+                        <p class='none'><?=htmlspecialchars($user["desc"])?></p> 
                     </div>                    
                 <?php
                     };
