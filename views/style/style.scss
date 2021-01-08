@@ -1,0 +1,187 @@
+/*-----------------------------------------------------------------------------------------------------------
+ *                              T O D O
+ *         Creation d'une modal
+ *          
+ *          
+ *          
+ * -----------------------------------------------------------------------------------------------------------
+ */
+
+ $persons:(
+            "romain" : "#fea79c",
+            "alexandre":"#fea79c",
+            "alexandre":"#fea79c",
+            "khang":"",
+            "alexis":"",
+            "corinne":"",
+            "elisa":"",
+            "florian":"",
+            "hugo":"",
+            "jerome":"",
+            "patricia":""
+        );
+
+html {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+    /*-------------------------------------------------------------------------------------------------------------
+    *                                                            
+    *                              HEADER                      
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    */
+        header {
+            background-color: #302c48;
+            color: white;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            text-align: center;
+
+            h2 {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            label {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                    "Open Sans", "Helvetica Neue", sans-serif;
+                font-size: 1.3em;
+            }
+
+            .formulaire {
+                background-color: white;
+                color: #302c48;
+                border-bottom: #302c48 2px solid;
+                padding-top: 1em;
+            }
+
+            .champs {
+                width: 15em;
+                height: 3em;
+                margin-top: 0.5em;
+            }
+
+            .envoyer {
+                width: 8em;
+                height: 3em;
+                margin-bottom: 2em;
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                padding-top: 2em;
+
+                h1 {
+                    margin-top: 2em;
+                    margin-left: 1em;
+                }
+            }
+
+            .img_logo {
+                border: white 2px solid;
+                border-radius: 3%;
+                width: 10em;
+                height: 10em;
+            }
+        }
+
+        /*----------------------------------------------------------------------------------------------------------------------
+        *                                                            
+        *                              CONTAINER                      
+        *
+        *---------------------------------------------------------------------------------------------------------------------
+        */
+        .containeur {
+            width: 80em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2em auto;
+            text-align: center;
+
+            img {
+                width: 185px;
+                height: 185px;
+                border-radius: 0.2rem;
+                margin: 2em;
+            }
+
+            .person {
+                border-radius: 4%;
+                padding: 2em;
+                margin: 2em;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.9;
+                }
+                h3 {
+                    color: white;
+                }
+                p {
+                    color: black;
+                    font-weight: bold;
+                }
+                .none {
+                    display: none;
+                }
+            }
+
+            @each $i in $persons{
+                .#{nth($i, 1)} {
+                    color:nth($i, 2);
+                }
+            }
+    
+            .alexandre-a {
+                background-color: #fea79c;
+            }
+
+            .alexandre {
+                background-color: #6b7fa0;
+            }
+
+            .alexis {
+                background-color: #ff743e;
+            }
+
+            .corinne {
+                background-color: #a4707c;
+            }
+
+            .elisa {
+                background-color: #ff57d0;
+            }
+
+            .florian {
+                background-color: #429479;
+            }
+
+            .hugo {
+                background-color: #0f76b7;
+            }
+
+            .jerome {
+                background-color: #9162c3;
+            }
+
+            .khang {
+                background-color: #e7c3c3;
+            }
+
+            .patricia {
+                background-color: #af2933;
+            }
+
+            .remy {
+                background-color: #b34b41;
+            }
+
+            .romain {
+                background-color: #878de3;
+            }
+        }
+    }
+}

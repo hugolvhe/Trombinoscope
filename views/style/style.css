@@ -1,0 +1,188 @@
+/*-----------------------------------------------------------------------------------------------------------
+ *                              T O D O
+ *         Creation d'une modal
+ *          
+ *          
+ *          
+ * -----------------------------------------------------------------------------------------------------------
+ */
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  /*-------------------------------------------------------------------------------------------------------------
+    *                                                            
+    *                              HEADER                      
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    */
+  /*----------------------------------------------------------------------------------------------------------------------
+        *                                                            
+        *                              CONTAINER                      
+        *
+        *---------------------------------------------------------------------------------------------------------------------
+        */
+}
+
+html body header {
+  background-color: #302c48;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+html body header h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+html body header label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.3em;
+}
+
+html body header .formulaire {
+  background-color: white;
+  color: #302c48;
+  border-bottom: #302c48 2px solid;
+  padding-top: 1em;
+}
+
+html body header .champs {
+  width: 15em;
+  height: 3em;
+  margin-top: 0.5em;
+}
+
+html body header .envoyer {
+  width: 8em;
+  height: 3em;
+  margin-bottom: 2em;
+}
+
+html body header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2em;
+}
+
+html body header .logo h1 {
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+html body header .img_logo {
+  border: white 2px solid;
+  border-radius: 3%;
+  width: 10em;
+  height: 10em;
+}
+
+html body .containeur {
+  width: 80em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em auto;
+  text-align: center;
+}
+
+html body .containeur img {
+  width: 185px;
+  height: 185px;
+  border-radius: 0.2rem;
+  margin: 2em;
+}
+
+html body .containeur .person {
+  border-radius: 4%;
+  padding: 2em;
+  margin: 2em;
+}
+
+html body .containeur .person:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+html body .containeur .person h3 {
+  color: white;
+}
+
+html body .containeur .person p {
+  color: black;
+  font-weight: bold;
+}
+
+html body .containeur .person .none {
+  display: none;
+}
+
+html body .containeur .big {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+html body .containeur .php {
+  background-color: #fea79c;
+}
+
+html body .containeur .alexandre-a {
+  background-color: #fea79c;
+}
+
+html body .containeur .alexandre {
+  background-color: #6b7fa0;
+}
+
+html body .containeur .alexis {
+  background-color: #ff743e;
+}
+
+html body .containeur .corinne {
+  background-color: #a4707c;
+}
+
+html body .containeur .elisa {
+  background-color: #ff57d0;
+}
+
+html body .containeur .florian {
+  background-color: #429479;
+}
+
+html body .containeur .hugo {
+  background-color: #0f76b7;
+}
+
+html body .containeur .jerome {
+  background-color: #9162c3;
+}
+
+html body .containeur .khang {
+  background-color: #e7c3c3;
+}
+
+html body .containeur .patricia {
+  background-color: #af2933;
+}
+
+html body .containeur .remy {
+  background-color: #b34b41;
+}
+
+html body .containeur .romain {
+  background-color: #878de3;
+}
+/*# sourceMappingURL=style.css.map */
